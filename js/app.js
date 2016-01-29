@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, Link, IndexRoute, browserHistory, hashHistory} from 'react-router'
+import { Router, Route, Link, IndexRoute, hashHistory, Redirect} from 'react-router'
 
 import Register from './components/register'
 import Login from './components/login'
@@ -83,11 +83,13 @@ const App = React.createClass({
 render((
 	<Router history={hashHistory} >
 		<Route path="/" component={App}>
+			<IndexRoute component={AppWrapper}/>
 			<Route path="/" component={AppWrapper}>
-				<Route path="/explore" component={Explore} />
-				<Route path="/stack" component={Stack} />
-				<Route path="/notification" component={Notification} />
-				<Route path="/profile" component={Profile} />
+				<IndexRoute component={Explore}/>
+				<Route path="/app/explore" component={Explore} />
+				<Route path="/app/stack" component={Stack} />
+				<Route path="/app/notification" component={Notification} />
+				<Route path="/app/profile" component={Profile} />
 			</Route>
 		</Route>
 	</Router>
