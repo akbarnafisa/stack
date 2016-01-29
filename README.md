@@ -2,6 +2,6 @@
 
 npm install 
 <br/>
-npm run
+npm start
 
 nt4pz
