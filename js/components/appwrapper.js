@@ -7,10 +7,10 @@ const AppWrapper = React.createClass({
 			<div>
 		  	{this.props.children}
 		    <nav>
-		     	<Link to="/app/explore">Explore </Link>
-		     	<Link to="/app/stack">Stack </Link>
-		     	<Link to="/app/notification">Notification </Link>
-		     	<Link to="/app/profile">Profile</Link>
+		     	<Link to="/explore">Explore </Link>
+		     	<Link to="/stack">Stack </Link>
+		     	<Link to="/notification">Notification </Link>
+		     	<Link to="/profile">Profile</Link>
 		    </nav>
 		  </div>
 		);

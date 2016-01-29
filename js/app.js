@@ -86,10 +86,10 @@ render((
 			<IndexRoute component={AppWrapper}/>
 			<Route path="/" component={AppWrapper}>
 				<IndexRoute component={Explore}/>
-				<Route path="/app/explore" component={Explore} />
-				<Route path="/app/stack" component={Stack} />
-				<Route path="/app/notification" component={Notification} />
-				<Route path="/app/profile" component={Profile} />
+				<Route path="/explore" component={Explore} />
+				<Route path="/stack" component={Stack} />
+				<Route path="/notification" component={Notification} />
+				<Route path="/profile" component={Profile} />
 			</Route>
 		</Route>
 	</Router>
